@@ -1,0 +1,66 @@
+body {
+	background-color: #1f1f1f;
+	color: #bfbfbf;
+	height: 2000px;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+em {
+	color: #e07a05;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.blueBox {
+	background: #627da0;
+	position: fixed;
+	/*this will add 150px of space from the top*/
+	top: 150px;
+	/*can't have bottom 150px and top 150px this would cancel each other out.*/
+	left: 300px;
+}
+
+.greenBox {
+	background: #5b8054;
+}
+
+.yellowBox {
+	background: yellow;
+	position: absolute;
+	left: 50px;
+}
+
+.pinkBox {
+	background: pink;
+}
+
+.orangeBox {
+	background: orange;
+	position: relative;
+	top: 50px;
+}
+
+.grayBox {
+	background: gray;
+}
+
+.container {
+	background: rgba(0,0,0,.4);
+	height: 200px;
+	width: 200px;
+	margin-left: 1500px;
+	position: absolute;
+	top: 300px;
+}
+
+pre {
+	color: yellow;
+}

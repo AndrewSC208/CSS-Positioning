@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Positioning</title>
+</head>
+<body>
+	<style>
+		.main {
+			display: block;
+			width: 100%;
+			height: 300px;
+			border: 1px solid black;
+			margin-top: 5px;
+		}
+		.box {
+			position: 
+			display:inline-block;
+			background: blue;
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin: 20px;
+			color: white;
+		}
+
+		/*#two {
+			position: relative;
+			top: 30px;
+			left: -20px;
+		}*/
+	
+	</style>
+<div class='main'>
+	<h3>Relative positioning</h3>
+	<ul>
+		<li>In normal document flow.</li>
+	</ul>
+	<hr>
+	<div class="box" id="one">One</div>
+	<div class="box" id="two">two</div>
+	<div class="box" id="three">three</div>
+	<div class="box" id="four">four</div>
+</div>
+
+<div class='main'>
+	<h3>Absolute positioning</h3>
+	<ul>
+		<li>Out of normal document flow.</li>
+		<li>does not take up space when placing other elements.</li>
+	</ul>
+	<hr>
+	<div class="box" id="one">One</div>
+	<div class="box" id="two">two</div>
+	<div class="box" id="three">three</div>
+	<div class="box" id="four">four</div>
+</div>
+
+</body>
+</html>

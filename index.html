@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Positioning</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+	<h1>CSS Positioning</h1>
+	<p><em><u>Fixed Positioning</u></em> 'fixes' the position of an element relative to the browser window. The element always stays fixed in place, even when scrolling.</p>
+	<p>This is how you can create elements that stay on the page even when scrolling, aka nav bar buttons, scrolling </p>
+	<div class="box blueBox">
+		<p>position: fixed; top: 150px; left:px;</p>
+	</div>
+	<div class="box greenBox"></div>
+
+	<p><em>Absolute positioning:</em> Takes an element out of document flow, meaning the browser acts as if the element has no width and height, and the other elements on the page move up as if it was never there. The position of the element is then fixed relative to the top level container, or the closest parent with a set positioning.</p> 
+
+	<p><em>Note:</em> The positioning is based off of the document, and not off of the original position <u>unlike</u> relative positioning.</p>
+
+	<div class="container">
+		<div class="box yellowBox">Absolute positioning</div>
+	</div>
+	<div class="box pinkBox"></div>
+
+	<p><em>Relative positioning:</em> sets the position of an element relative to its original position. The element's original width and height is retained in document flow and other elements behave as if it was in its original position.</p>
+
+	<p><em>note:</em> The big difference between realtive positioning nad absolute is that the original space is maintained with relative positioning. Position is also calculated baised off of its original position.</p>
+
+	<div class="box orangeBox">
+		
+	</div>
+
+	<div class="box grayBox"></div>
+
+	<p><em>Static positioning:</em> is the default behavior of elements. <em>Inherited positioning</em> tells and element to inhearit its prositioning form its parent element. <em>Z-index</em> controls the vertical stacking order of elements. Elements must have a set positioning for z-index to work.</p>
+
+
+	<p><em>Foating left:</em> removes an element from normal document flow. It then takes that element and pushes it to the far left as possible. Other elements will move up as far as possiable to flow around the element and take its original spacd.</p>
+
+	<p><em>Floating right:</em> removes an element from normal document floa. IT then pushes the element to the far right as far right. Other elements will morve up as far as possible to flow around the element and take its  origianl space.</p>
+
+	<p><em>Floating:</em> positions an element according to document flow, and then moves it to the far left or right as possible. elements following a floated element will move up as far as possible.</p>
+
+	<p><em>clear:(left, right, both)</em> is basically a clear-fix.</p>
+
+	<hr>
+
+	<h3>how to center and element correctly:</h3>
+
+	<p>One of the most commonly asked questions is how to <em>center elements</em> since there is no option to float center. But by thinking carefully about how elements behave, we can use positioning to achieve he same result.</p>
+
+	<h3>Center horizontally:</h3>
+	<pre>margin: 0 auto;</pre><p>this will center anything. <em>Note:</em> need to have a set width for the element that you are centering</p>
+
+	<h3>Center vertically and horizontally:</h3>
+	<p><em>Note:</em> If you just want to center vertically just add the first section to the container</p>
+	<p><u>Add this to the container</u>:</p>
+	<pre>position: absolute;<br>top: 50%;<br>mafrgin-top: (half of the size of the element you are centering vertically);<br>left: 0;<br>width: 100%;</pre>
+	<p><u>Add this to element in container</u>:</p>
+	<pre>margin: 0 auto;</pre>
+	<script src="scripts/scripts.js"></script>
+</body>
+</html>
